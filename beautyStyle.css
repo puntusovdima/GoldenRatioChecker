@@ -1,0 +1,155 @@
+/* Global Body Styles */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for Centering Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Container Styling */
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Uploaded Image Styling */
+#uploadedImage {
+  max-width: 100%;
+  display: none;
+}
+
+/* Overlay Positioning */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Controls Container */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+/* Button Container Styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;    
+}
+
+/* General Button Styling */
+button {
+  width: 90%;
+  max-width: 300px;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* SVG Line Styling */
+svg line {
+  stroke: rgb(212, 212, 212);
+  stroke-width: 1.5;
+}
+
+/* Path Styling (e.g., for drawing tools) */
+path {
+  stroke: red;
+  stroke-width: 2;
+  stroke-dasharray: 5; /* Creates a dashed line effect */
+}
+
+/* Advanced Button Styling (Button-30) */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: 
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 
+    #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+/* Button Focus State */
+.button-30:focus {
+  box-shadow: 
+    #d6d6e7 0 0 0 1.5px inset, 
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 
+    #d6d6e7 0 -3px 0 inset;
+}
+
+/* Button Hover State */
+.button-30:hover {
+  box-shadow: 
+    rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 
+    #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+/* Button Active State */
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Clear Button Specific Styling */
+#clear-button {
+  color: #fff;
+  background-color: #ff7272;
+  box-shadow: 
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(154, 56, 7, 0.3) 0 7px 13px -3px, 
+    #bf321c 0 -3px 0 inset;
+}
+
+/* Drop Area Styling for File Upload */
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  width: 300px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px auto;
+  padding: 20px;
+}

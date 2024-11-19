@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="beautyStyle.css" />
+    <title>Fibonacci Analizer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <input type="file" id="imageInput" accept="image/*" style="display: none;"/>
+        <div class="button-container">
+          <button onclick="toggleThirds()" class="button-30">
+            Toggle Rule of Thirds
+          </button>
+          <button onclick="toggleSpiralLBC()" class="button-30">
+            Toggle Fibonacci Spiral LBC
+          </button>
+          <button onclick="toggleSpiralRBC()" class="button-30">
+            Toggle Fibonacci Spiral RBC
+          </button>
+          <button onclick="toggleSpiralLUC()" class="button-30">
+            Toggle Fibonacci Spiral LUC
+          </button>
+          <button onclick="toggleSpiralRUC()" class="button-30">
+            Toggle Fibonacci Spiral RUC
+          </button>
+          <button class="button-30" id="clear-button">
+            Clear Image
+          </button>
+        </div>
+        <div id="drop-area">Drop files here to upload</div>
+      </div>
+      <div class="image-container">
+        <img id="uploadedImage" alt="Uploaded image" />
+        <!--* Draw the thirds -->
+        <svg
+          class="overlay"
+          id="thirdsOverlay"
+          style="display: none;"
+        >
+        </svg>
+        <!--* Draw the golden spirals -->
+        <svg class="overlay" id="spiralOverlayLBC" style="display: none;"></svg>
+        <svg class="overlay" id="spiralOverlayRBC" style="display: none;"></svg>
+        <svg class="overlay" id="spiralOverlayLUC" style="display: none;"></svg>
+        <svg class="overlay" id="spiralOverlayRUC" style="display: none;"></svg>
+
+      </div>
+    </div>
+
+    <!--* link to the main script -->
+    <script src="beautyScript.js"></script>
+    <!-- <script src="betaScript.js"></script> -->
+  </body>
+</html>
